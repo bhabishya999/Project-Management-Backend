@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const connectDB = require('./database/connection');
 const app = express();
 const {Router} = require("express");
@@ -10,6 +11,7 @@ const listProjectController = require('./controller/ListProjectDetailsController
 connectDB();
 
 app.use(express.json());
+app.use(cors());
 app.use('/api',route);
 
 route.post('/project', createProjectValidationFields, validateProject, createProjectController);
