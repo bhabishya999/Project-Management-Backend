@@ -6,7 +6,7 @@ async function createProject(req, res) {
             title: req.body.title,
             description: req.body.description,
             featured: req.body.featured,
-            projectType: req.body.projectType,
+            type: req.body.type,
             city: req.body.city,
             category: req.body.category
         });

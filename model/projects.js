@@ -13,7 +13,7 @@ const projectSchema = new mongoose.Schema({
         type: Boolean,
         default: false
     },
-    projectType: {
+    type: {
         type: String,
         required: true
     },

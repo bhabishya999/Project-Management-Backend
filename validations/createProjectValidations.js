@@ -14,7 +14,7 @@ const createProjectValidationFields = [
         .isBoolean().withMessage("The featured field must be a boolean")
         .toBoolean(),
 
-    check('projectType', "The project type field is required")
+    check('type', "The project type field is required")
         .notEmpty(),
 
     check('city', "The city field is required")
